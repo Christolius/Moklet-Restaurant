@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moklet Restaurant</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <a href="#home">
+          <img src="assets/logo.png" alt="Moklet Restaurant" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <a class="reservasi" href="#reservasi">Reservasi Meja</a>
+    </header>
+    <main>
+      <section id="home">
+        <div id="home-title">
+          <img id="logo-img" src="assets/logo.png" alt="Moklet Restaurant" />
+
+          <h1>Moklet Restaurant</h1>
+
+          <h3>
+            Di Moklet Restaurant, kami menyajikan hidangan lezat dengan suasana
+            santai dan harga yang bersahabat. Cocok buat nongkrong, makan bareng
+            keluarga, atau sekedar menikmati waktu sendiri sambil menikmati
+            makanan favoritmu.
+          </h3>
+        </div>
+
+        <a class="tombol" href="#menu">Lihat Menu</a>
+      </section>
+
+      <section id="menu">
+        <h2>Menu</h2>
+        <div id="menu-list">
+          <div class="menu-card">
+            <img src="assets/nasgor.png" />
+            <h3>Nasi Goreng</h3>
+            <p>
+              Nasi Goreng adalah nasi goreng yang digoreng menggunakan minyak untuk menggoreng nasi goreng.
+            </p>
+          </div>
+          <div class="menu-card">
+            <img src="assets/mietelur.png" />
+            <h3>Mie Goreng Telur</h3>
+            <p>
+              Mie Goreng Telur adalah telur goreng tambah mie yang harusnya digoreng tapi malah direbus.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tentang">
+        <h2>Tentang Kami</h2>
+
+        <div id="about-content">
+          <img src="assets/photo.png" alt="Moklet Restaurant" />
+          <div>
+            <h3>Cerita Kami</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <h3>Filosofi Kami</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontak">
+        <h2>Kontak</h2>
+        <div id="info-kontak">
+          <div>
+            <h3>Alamat</h3>
+            <p>Jl. Contoh No. 123, Malang, Jawa Timur</p>
+          </div>
+
+          <div>
+            <h3>Jam Operasional</h3>
+            <p>Senin - Minggu: 10:00 - 22:00</p>
+          </div>
+
+          <div>
+            <h3>Telepon</h3>
+            <p>0812-3456-7890</p>
+          </div>
+
+          <div>
+            <h3>Email</h3>
+            <p>hello@mokletrestaurant.com</p>
+          </div>
+        </div>
+
+        <div id="social-media">
+          <a class="tombol-kontak" href="#kontak">Instagram</a>
+          <a class="tombol-kontak" href="#kontak">Facebook</a>
+        </div>
+        
+      </section>
+
+      <section id="reservasi">
+        <h2>Reservasi Meja</h2>
+
+        <form id="reservation-form">
+          <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required />
+          </div>
+
+          <div class="form-group">
+            <label for="telepon">Nomor Telepon</label>
+            <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="tanggal">Tanggal</label>
+              <input type="date" id="tanggal" name="tanggal" required />
+            </div>
+
+            <div class="form-group">
+              <label for="waktu">Waktu</label>
+              <input type="time" id="waktu" name="waktu" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="jumlah">Jumlah Orang</label>
+            <input type="number" id="jumlah" name="jumlah" min="1" max="20" placeholder="Jumlah orang" required />
+          </div>
+
+          <div class="form-group">
+            <label for="catatan">Catatan</label>
+            <textarea
+              id="catatan"
+              name="catatan"
+              rows="4"
+              placeholder="Permintaan khusus (opsional)"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="tombol">Reservasi Sekarang</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
