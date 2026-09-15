@@ -1,10 +1,10 @@
 # Moklet Restaurant
 
-Moklet Restaurant is a **school project** themed around a restaurant website. Despite its name, Moklet Restaurant is **not an actual restaurant** and does not represent a real business.
 
-The website is designed as a simple restaurant landing page that demonstrates basic web development concepts such as:<br>
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)<br>
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
+Moklet Restaurant is a **school project** themed around a restaurant website. Despite its name, Moklet Restaurant is **not an actual restaurant** and does not represent a real business.
 
 ## About the Project
 
