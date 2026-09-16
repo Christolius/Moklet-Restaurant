@@ -15,12 +15,12 @@
 * {
   box-sizing: border-box;
   font-family: "Google Sans", sans-serif;
+  transition: 0.2s ease;
 }
 
 html {
   scroll-behavior: smooth;
 }
-
 
 body {
   margin: 0;
@@ -42,6 +42,7 @@ header {
   background-color: #292a2d;
   color: #f8f9fa;
   border-bottom: 1px solid #3c4043;
+  border-top: 1px solid #3c4043;
 }
 
 header img {
@@ -68,7 +69,6 @@ header img {
   display: inline-block;
   color: white;
   text-decoration: none;
-  transition: .2s ease;
 }
 
 .header-left a:hover,
@@ -95,7 +95,6 @@ header img {
   font-weight: 500;
   cursor: pointer;
   text-decoration: none;
-  transition: 0.2s ease;
 }
 
 .tombol:hover {
@@ -118,7 +117,7 @@ footer {
   color: #f8f9fa;
   border-bottom: 1px solid #3c4043;
   width: 100%;
-  height: 300px;
+  min-height: 300px;
 }
 
 #footer-left {
@@ -150,6 +149,7 @@ footer h1 {
 #footer-right div {
   display: flex;
   flex-direction: row;
+  justify-content: right;
 }
 
 #footer-right p {
@@ -167,11 +167,13 @@ footer h1 {
 #footer-pages ul {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
-#footer-pages li {
-  transition: 0.2s ease;
+#footer-contacts ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
 }
 
 #footer-pages li:hover {
@@ -258,7 +260,6 @@ footer h1 {
   border-radius: 12px;
   padding: 24px;
   text-align: center;
-  transition: 0.2s ease;
 }
 
 .menu-card:hover {
@@ -360,7 +361,6 @@ footer h1 {
   background-color: #292a2d;
   border: 1px solid #3c4043;
   border-radius: 12px;
-  transition: .2s ease;
 }
 
 #info-kontak > div:hover {
@@ -396,7 +396,6 @@ footer h1 {
   font-weight: 500;
   cursor: pointer;
   text-decoration: none;
-  transition: 0.2s ease;
 }
 
 .tombol-kontak:hover {
@@ -453,7 +452,6 @@ footer h1 {
   border-radius: 8px;
   font-size: 16px;
   outline: none;
-  transition: 0.2s ease;
 }
 
 .form-group input:focus,
@@ -479,6 +477,19 @@ footer h1 {
 #reservation-form .tombol {
   width: 100%;
   margin-top: 8px;
+}
+
+/* Disclaimer */
+#disclaimer {
+  /*
+  position: absolute;
+  inset: 70px;
+  display: flex;
+  justify-content: center;
+  */
+  text-align: center;
+  color: #80868b;
+  font-size: 18px;
 }
 
 /* Responsive */
@@ -510,6 +521,31 @@ footer h1 {
 }
 
 @media (max-width: 650px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  header img {
+    width: 42px;
+    margin: 12px;
+  }
+
+  .header-left ul {
+    gap: 12px;
+    font-size: 14px;
+  }
+
+  .reservasi {
+    margin: 10px;
+  }
+
+  .tombol {
+    padding: 10px 16px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 650px) {
   #reservasi {
     padding: 60px 20px;
   }
@@ -524,3 +560,18 @@ footer h1 {
   }
 }
 
+@media (max-width: 650px) {
+  footer {
+    min-height: 400px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #footer-right {
+    padding: 20px;
+  }
+
+  footer h1 {
+    font-size: 32px;
+  }
+}
